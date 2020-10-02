@@ -31,6 +31,9 @@ _(stackblitz example)_
         </div>
 
 
+![](/Images/dict.png)  
+
+
 
 ## Code scaffolding
 
