@@ -49,6 +49,67 @@ _(stackblitz example)_
 
 ![](/Images/nest.png) 
 
+
+### with default icon (same as key)
+       //data   a dict(only k:v, no array)
+       public icon:any = = {
+            alarm:{
+                group:{
+                    person:{
+                        star_rate:{
+                        }
+                    }
+                },
+                speaker_notes:{
+                    star_rate:{
+                    },
+                },
+                feedback:{
+                }
+          }
+       }
+       //
+        <div
+            fxLayout="row"
+            fxLayoutAlign="start center"
+        >
+            <button mat-button color="primary" [disabled]="true">with default-icon same as display-name</button>
+            <nv-nest-menu [data]="icon" [enable_auto_icon]="true"></nv-nest-menu>
+        </div>
+        
+         
+![](/Images/enable_auto_icon.png) 
+
+### without default icon 
+       //data   a dict(only k:v, no array)
+       public icon:any = = {
+            alarm:{
+                group:{
+                    person:{
+                        star_rate:{
+                        }
+                    }
+                },
+                speaker_notes:{
+                    star_rate:{
+                    },
+                },
+                feedback:{
+                }
+          }
+       }
+       //
+        <div
+            fxLayout="row"
+            fxLayoutAlign="start center"
+        >
+            <button mat-button color="primary" [disabled]="true">with default-icon same as display-name</button>
+            <nv-nest-menu [data]="icon" [enable_auto_icon]="false"></nv-nest-menu>
+        </div>
+        
+         
+![](/Images/disable_auto_icon.png) 
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project nest-menu` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project nest-menu`.
