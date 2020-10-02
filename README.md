@@ -110,6 +110,26 @@ _(stackblitz example)_
          
 ![](/Images/disable_auto_icon.png) 
 
+
+### use a special object created by ndtreejs
+
+    //data 
+    import {
+        ndcls
+    } from "ndtreejs"
+    public tree:any = ndcls.load_from_nest_dict(nest_data,"children")
+    //
+    <div
+        fxLayout="row"
+        fxLayoutAlign="start center"
+    >
+        <button mat-button color="primary" [disabled]="true">object data(internal-using ndtreejs)</button>
+        <nv-nest-menu [data]="tree"></nv-nest-menu>
+    </div>
+
+[refer to nvtree(ndtreejs) for this data type](https://github.com/navegador5/nvtree)  
+
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project nest-menu` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project nest-menu`.
