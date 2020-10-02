@@ -130,6 +130,32 @@ _(stackblitz example)_
 [refer to nvtree(ndtreejs) for this data type](https://github.com/navegador5/nvtree)  
 
 
+## GITHUB
+
+---------------------------------------------------------------------------------------
+[nv-angular-nest-menu](https://github.com/navegador5/nv-angular-nest-menu)
+
+---------------------------------------------------------------------------------------
+
+## PACKAGE DEPENDANY
+
+---------------------------------------------------------
+[ndtreejs](https://github.com/navegador5/nvtree)
+[nvjson](https://github.com/navegador5/nvjson)
+
+----------------------------------------------------------
+
+## CODE REFERENCE
+_(thanks to)_
+
+------------------------------------------------------------------
+[https://stackblitz.com/@Splaktar](https://stackblitz.com/edit/dynamic-nested-topnav-menu)
+
+--------------------------------------------------------------------
+
+
+
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project nest-menu` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project nest-menu`.
