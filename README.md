@@ -33,7 +33,21 @@ _(stackblitz example)_
 
 ![](/Images/dict.png)  
 
+### with nest dict data
+       //data   nest-dict(each element with a children:[])
+       public nest:any = {"disp_name":"DevFestFL","icon_name":"","children":[{"disp_name":"Speakers","icon_name":"group","children":[{"disp_name":"Michael Prentice","icon_name":"person","route":"michael-prentice","children":[{"disp_name":"Create Enterprise UIs","icon_name":"star_rate","route":"material-design"}]},{"disp_name":"Stephen Fluin","icon_name":"person","route":"stephen-fluin","children":[{"disp_name":"What's up with the Web?","icon_name":"star_rate","route":"what-up-web"}]},{"disp_name":"Mike Brocchi","icon_name":"person","route":"mike-brocchi","children":[{"disp_name":"My ally, the CLI","icon_name":"star_rate","route":"my-ally-cli"},{"disp_name":"Become an Angular Tailor","icon_name":"star_rate","route":"become-angular-tailer"}]}]},{"disp_name":"Sessions","icon_name":"speaker_notes","children":[{"disp_name":"Create Enterprise UIs","icon_name":"star_rate","route":"material-design"},{"disp_name":"What's up with the Web?","icon_name":"star_rate","route":"what-up-web"},{"disp_name":"My ally, the CLI","icon_name":"star_rate","route":"my-ally-cli"},{"disp_name":"Become an Angular Tailor","icon_name":"star_rate","route":"become-angular-tailer"}]},{"disp_name":"Feedback","icon_name":"feedback","route":"feedback"}]}
 
+       //
+        <div
+            fxLayout="row"
+            fxLayoutAlign="start center"
+        >
+            <button mat-button color="primary" [disabled]="true">nest data with .children</button>
+            <nv-nest-menu [data]="nest"></nv-nest-menu>
+        </div>
+
+
+![](/Images/nest.png) 
 
 ## Code scaffolding
 
